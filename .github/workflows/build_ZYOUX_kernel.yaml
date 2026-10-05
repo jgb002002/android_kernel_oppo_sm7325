@@ -40,7 +40,7 @@ jobs:
         run: |
           mkdir -p compiler
           cd compiler
-          curl -fL "https://github.com/Rancemxn/android_kernel_oppo_sm7325/releases/download/BuildTool/linux-x86-refs_heads_llvm-r383902b-clang-r383902.tar.gz" -o clang-r383902.tar.gz --connect-timeout 30 --retry 5 --retry-delay 5
+          curl -fL "https://github.com/ZYouXPro/android_kernel_oppo_sm7325/releases/download/K11/linux-x86-refs_heads_llvm-r383902b-clang-r383902.tar.gz" -o clang-r383902.tar.gz --connect-timeout 30 --retry 5 --retry-delay 5
           mkdir -p clang-bin
           tar -xzf clang-r383902.tar.gz -C clang-bin
           rm clang-r383902.tar.gz
@@ -74,7 +74,7 @@ jobs:
           pwd
           mkdir -p boot_pack
           cd boot_pack
-          wget https://raw.githubusercontent.com/miaizhe/magiskboot-linux/refs/heads/main/x86_64/magiskboot
+          wget https://github.com/ZYouXPro/android_kernel_oppo_sm7325/releases/download/K11/magiskboot
           chmod +x magiskboot
           curl -fL "https://github.com/ZYouXPro/android_kernel_oppo_sm7325/releases/download/K11/boot.img" -o boot_origin.img
           ./magiskboot unpack boot_origin.img
