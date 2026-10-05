@@ -41,10 +41,10 @@ jobs:
         run: |
           mkdir -p compiler
           cd compiler
-          curl -fL "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/android12-release/clang-r383902b1.tar.gz" -o clang-r383902b1.tar.gz --connect-timeout 30 --retry 5 --retry-delay 5
+          curl -fL "https://github.com/ZYouXPro/android_kernel_oppo_sm7325/releases/download/K11/linux-x86-refs_heads_llvm-r383902b-clang-r383902.tar.gz" -o clang-r383902.tar.gz --connect-timeout 30 --retry 5 --retry-delay 5
           mkdir -p clang-bin
-          tar -xzf clang-r383902b1.tar.gz -C clang-bin
-          rm clang-r383902b1.tar.gz
+          tar -xzf clang-r383902.tar.gz -C clang-bin
+          rm clang-r383902.tar.gz
 
       - name: Handle Dependencies
         run: |
